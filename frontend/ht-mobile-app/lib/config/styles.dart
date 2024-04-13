@@ -25,6 +25,19 @@ class AppStyles {
     fontWeight: AppStyles.bold,
   );
 
+  static final TextStyle bodyLarge = TextStyle(
+    fontSize: AppSizes.mediumText,
+    color: AppColors.neutral.shade900,
+  );
+  static final TextStyle bodyMedium = TextStyle(
+    fontSize: AppSizes.mediumText,
+    color: AppColors.neutral.shade900,
+  );
+  static final TextStyle bodySmall = TextStyle(
+    fontSize: AppSizes.smallText,
+    color: AppColors.neutral.shade900,
+  );
+
   static final ButtonStyle buttonStyle = ButtonStyle(
     elevation: MaterialStateProperty.all(0),
     backgroundColor: MaterialStateProperty.all(AppColors.primary),

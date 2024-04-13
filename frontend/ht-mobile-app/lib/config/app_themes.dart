@@ -14,7 +14,7 @@ class AppTheme {
         elevation: MaterialStateProperty.all(0),
         padding: MaterialStateProperty.all(
           EdgeInsets.symmetric(
-            horizontal: AppSizes.largeWidthDimens,
+            horizontal: AppSizes.xLargeHeightDimens,
             vertical: AppSizes.largeHeightDimens,
           ),
         ),

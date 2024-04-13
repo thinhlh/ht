@@ -24,7 +24,7 @@ class HomePage extends PageStateless<HomeProvider> {
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: AppSizes.largeWidthDimens,
+            horizontal: AppSizes.xLargeHeightDimens,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

@@ -26,11 +26,17 @@ class AppSizes {
   /// 16.w
   static final double largeWidthDimens = 16.w;
 
+  /// 24.h
+  static final double xLargeHeightDimens = 24.h;
+
+  /// 24.w
+  static final double xLargeWidthDimens = 24.w;
+
   /// 32.w
-  static final double extraLargeWidthDimens = 32.w;
+  static final double xxLargeWidthDimens = 32.w;
 
   /// 32.h
-  static final double extraLargeHeightDimens = 32.h;
+  static final double xxLargeHeightDimens = 32.h;
 
   /// 4.r
   static final double smallRadius = 4.r;

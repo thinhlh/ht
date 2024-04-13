@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tfc/app/home2/presentation/components/home2_menu.dart';
+import 'package:tfc/app/home2/presentation/components/home2_search_bar.dart';
 import 'package:tfc/app/home2/presentation/views/home2_provider.dart';
 import 'package:tfc/base/presentation/pages/p_stateless.dart';
 import 'package:tfc/config/app_sizes.dart';
@@ -16,10 +18,18 @@ class Home2Page extends PageStateless<Home2Provider> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Expanded(
-            flex: 1,
+            flex: 2,
             child: ClipRRect(
               child: Container(
-                color: AppColors.primaryLight,
+                decoration: const BoxDecoration(
+                  color: AppColors.primaryLight,
+                  image: DecorationImage(
+                    image: AssetImage(
+                      'assets/images/background.jpeg',
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 child: Center(
                   child: Text(
                     'Banner',
@@ -29,60 +39,9 @@ class Home2Page extends PageStateless<Home2Provider> {
               ),
             ),
           ),
-          FractionalTranslation(
-            translation: const Offset(0, -0.5),
-            child: SizedBox(
-              width: 0.9.sw,
-              child: PhysicalModel(
-                color: Colors.white,
-                elevation: AppSizes.largeElevation,
-                borderRadius: BorderRadius.circular(
-                  AppSizes.buttonBorderRadius,
-                ),
-                child: TextField(
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      contentPadding: EdgeInsets.symmetric(
-                        vertical: AppSizes.extraLargeHeightDimens,
-                        horizontal: AppSizes.largeWidthDimens,
-                      ),
-                      hintText: "Tell me sth",
-                      fillColor: Colors.white,
-                      suffixIcon: const Icon(
-                        Icons.send_rounded,
-                        color: AppColors.primary,
-                      )),
-                ),
-              ),
-            ),
-          ),
+          const Home2SearchBar(),
           Expanded(
-            child: GridView.builder(
-              padding: EdgeInsets.symmetric(
-                horizontal: AppSizes.largeWidthDimens,
-              ),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                mainAxisSpacing: AppSizes.largeHeightDimens,
-                crossAxisSpacing: AppSizes.largeWidthDimens,
-              ),
-              itemCount: 6,
-              itemBuilder: (_, idx) => PhysicalModel(
-                color: AppColors.secondaryLight.withAlpha(idx * 40 + 20),
-                borderRadius: BorderRadius.circular(
-                  AppSizes.buttonBorderRadius,
-                ),
-                child: SizedBox(
-                  width: 20.w,
-                  height: 20.h,
-                  child: Center(
-                    child: Text(
-                      "Menu $idx",
-                    ),
-                  ),
-                ),
-              ),
-            ),
+            child: Home2Menu(),
           ),
         ],
       ),
