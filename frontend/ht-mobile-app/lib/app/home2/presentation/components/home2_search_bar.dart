@@ -16,11 +16,11 @@ class Home2SearchBar extends StatelessWidget {
           color: Colors.white,
           elevation: AppSizes.largeElevation,
           borderRadius: BorderRadius.circular(
-            AppSizes.buttonBorderRadius,
+            AppSizes.mediumButtonBorderRadius,
           ),
           child: TextField(
             maxLines: 1,
-            cursorColor: AppColors.primaryLight,
+            cursorColor: AppColors.secondary,
             decoration: InputDecoration(
               border: InputBorder.none,
               contentPadding: EdgeInsets.symmetric(
@@ -31,7 +31,7 @@ class Home2SearchBar extends StatelessWidget {
               fillColor: Colors.white,
               suffixIcon: const Icon(
                 Icons.send_rounded,
-                color: AppColors.primary,
+                color: AppColors.secondary,
               ),
             ),
           ),

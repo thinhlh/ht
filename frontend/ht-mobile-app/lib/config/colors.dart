@@ -36,10 +36,10 @@ class AppColors {
 
   /// Background colors
   /// neutral.shade50
-  static final Color backgroundLight = neutral.shade50;
+  static final Color backgroundLight = neutral.shade200;
 
   /// neutral.shade200
-  static final Color backgroundNeutral = neutral.shade200;
+  static final Color backgroundNeutral = neutral.shade50;
 
   /// neutral.shade800
   static final Color backgroundDark = neutral.shade800;

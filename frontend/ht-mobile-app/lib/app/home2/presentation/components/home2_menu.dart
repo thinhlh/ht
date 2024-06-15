@@ -9,12 +9,12 @@ class Home2Menu extends StatelessWidget {
   Home2Menu({super.key});
 
   final List<m.MenuItem> menu = [
-    m.MenuItem("Message", () => {}),
-    m.MenuItem("Notifications", () => {}),
-    m.MenuItem("Reminders", () => {}),
-    m.MenuItem("Gallery", () => {}),
-    m.MenuItem("Setting", () => {}),
-    m.MenuItem("Tracking", () => {}),
+    m.MenuItem("Message", Icons.message_outlined, () => {}),
+    m.MenuItem("Notifications", Icons.notifications_outlined, () => {}),
+    m.MenuItem("Reminders", Icons.alarm_outlined, () => {}),
+    m.MenuItem("Gallery", Icons.image_outlined, () => {}),
+    m.MenuItem("Setting", Icons.settings_outlined, () => {}),
+    m.MenuItem("Tracking", Icons.location_on_outlined, () => {}),
   ];
 
   @override
@@ -33,19 +33,34 @@ class Home2Menu extends StatelessWidget {
       itemBuilder: (_, idx) => GestureDetector(
         onTap: menu[idx].onTap,
         child: PhysicalModel(
-          color: AppColors.secondaryLight.withAlpha(idx * 40 + 20),
+          color: AppColors.backgroundNeutral,
+          elevation: 1,
           borderRadius: BorderRadius.circular(
-            AppSizes.buttonBorderRadius,
+            AppSizes.smallButtonBorderRadius,
           ),
           child: SizedBox(
             width: 20.w,
             height: 20.h,
             child: Center(
-              child: Text(
-                menu[idx].name,
-                style: AppStyles.bodySmall.copyWith(
-                  fontWeight: FontWeight.w500,
-                ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    menu[idx].icon,
+                    color: AppColors.primary,
+                  ),
+                  SizedBox(
+                    height: AppSizes.mediumHeightDimens,
+                  ),
+                  Center(
+                    child: Text(
+                      menu[idx].name,
+                      style: AppStyles.bodySmall.copyWith(
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

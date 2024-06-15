@@ -44,7 +44,7 @@ class AppStyles {
     shape: MaterialStateProperty.all(
       RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(
-          AppSizes.buttonBorderRadius,
+          AppSizes.mediumButtonBorderRadius,
         ),
       ),
     ),

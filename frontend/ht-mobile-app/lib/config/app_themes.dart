@@ -7,6 +7,11 @@ class AppTheme {
 
   static final ThemeData light = ThemeData(
     brightness: Brightness.light,
+    scaffoldBackgroundColor: AppColors.backgroundLight,
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Colors.red,
+      elevation: 10,
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(AppColors.primary),
@@ -27,7 +32,7 @@ class AppTheme {
     ),
   );
 
-  static final ThemeData dark = ThemeData.dark().copyWith(
+  static final ThemeData dark = ThemeData.light().copyWith(
     brightness: Brightness.dark,
   );
 }
