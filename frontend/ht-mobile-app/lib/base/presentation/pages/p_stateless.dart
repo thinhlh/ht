@@ -29,11 +29,9 @@ abstract class PageStateless<T extends ChangeNotifier> extends StatelessWidget
     final provider = Provider.of<T>(context, listen: false);
     initDependencies(context);
 
-    return Scaffold(
-      body: buildPage(
-        context,
-        provider,
-      ),
+    return buildPage(
+      context,
+      provider,
     );
   }
 }

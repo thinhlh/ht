@@ -8,8 +8,12 @@ class AppTheme {
   static final ThemeData light = ThemeData(
     brightness: Brightness.light,
     scaffoldBackgroundColor: AppColors.backgroundLight,
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      enableFeedback: false,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
+    ),
     bottomAppBarTheme: const BottomAppBarTheme(
-      color: Colors.red,
       elevation: 10,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(

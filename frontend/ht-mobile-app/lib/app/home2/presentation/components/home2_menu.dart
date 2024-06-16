@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tfc/app/home2/domain/entity/menu.dart' as m;
 import 'package:tfc/config/app_sizes.dart';
@@ -20,52 +22,92 @@ class Home2Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      padding: EdgeInsets.zero,
       physics: const NeverScrollableScrollPhysics(),
-      padding: EdgeInsets.symmetric(
-        horizontal: AppSizes.xLargeHeightDimens,
-      ),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        mainAxisSpacing: AppSizes.largeHeightDimens,
-        crossAxisSpacing: AppSizes.xLargeHeightDimens,
+        crossAxisCount: 4,
+        childAspectRatio: 1,
+        mainAxisSpacing: AppSizes.mediumHeightDimens,
+        crossAxisSpacing: AppSizes.mediumWidthDimens,
       ),
-      itemCount: 6,
       itemBuilder: (_, idx) => GestureDetector(
         onTap: menu[idx].onTap,
-        child: PhysicalModel(
-          color: AppColors.backgroundNeutral,
-          elevation: 1,
-          borderRadius: BorderRadius.circular(
-            AppSizes.smallButtonBorderRadius,
-          ),
-          child: SizedBox(
-            width: 20.w,
-            height: 20.h,
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              child: AspectRatio(
+                aspectRatio: 1,
+                child: PhysicalModel(
+                  color: AppColors.backgroundNeutral,
+                  elevation: AppSizes.xSmallElevation,
+                  borderRadius: BorderRadius.circular(
+                    AppSizes.mediumRadius,
+                  ),
+                  child: Icon(
                     menu[idx].icon,
                     color: AppColors.primary,
                   ),
-                  SizedBox(
-                    height: AppSizes.mediumHeightDimens,
-                  ),
-                  Center(
-                    child: Text(
-                      menu[idx].name,
-                      style: AppStyles.bodySmall.copyWith(
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
-          ),
+            SizedBox(
+              height: AppSizes.smallHeightDimens,
+            ),
+            Text(
+              menu[idx].name,
+              style: AppStyles.bodySmall.copyWith(
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ],
         ),
       ),
+      itemCount: menu.length,
     );
+    //   return GridView.builder(
+    //     physics: const NeverScrollableScrollPhysics(),
+    //     padding: EdgeInsets.symmetric(
+    //       horizontal: AppSizes.xLargeHeightDimens,
+    //     ),
+    //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+    //       crossAxisCount: 4,
+    //       mainAxisSpacing: AppSizes.xxLargeHeightDimens,
+    //       crossAxisSpacing: AppSizes.xLargeHeightDimens,
+    //     ),
+    //     itemCount: menu.length,
+    //     itemBuilder: (_, idx) => GestureDetector(
+    //       onTap: menu[idx].onTap,
+    //       child: Column(
+    //         children: [
+    //           AspectRatio(
+    //             aspectRatio: 1,
+    //             child: PhysicalModel(
+    //               color: AppColors.backgroundNeutral,
+    //               borderRadius: BorderRadius.circular(
+    //                 AppSizes.smallButtonBorderRadius,
+    //               ),
+    //               elevation: 1,
+    //               child: Center(
+    //                 child: Icon(
+    //                   menu[idx].icon,
+    //                   color: AppColors.primary,
+    //                 ),
+    //               ),
+    //             ),
+    //           ),
+    //           SizedBox(
+    //             height: AppSizes.smallHeightDimens,
+    //           ),
+    //           Text(
+    //             menu[idx].name,
+    //             style: AppStyles.bodySmall.copyWith(
+    //               fontWeight: FontWeight.w500,
+    //             ),
+    //           ),
+    //         ],
+    //       ),
+    //     ),
+    //   );
   }
 }

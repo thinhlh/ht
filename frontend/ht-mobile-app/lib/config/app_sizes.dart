@@ -62,6 +62,9 @@ class AppSizes {
   /// 12.sp
   static final double extraSmallText = 12.sp;
 
+  /// 2
+  static const double xSmallElevation = 1;
+
   /// 4
   static const double smallElevation = 4;
 

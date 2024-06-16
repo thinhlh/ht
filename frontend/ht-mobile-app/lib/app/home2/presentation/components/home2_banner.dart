@@ -15,7 +15,7 @@ class Home2Banner extends StatelessWidget {
           color: AppColors.primaryLight,
           image: DecorationImage(
             image: AssetImage(
-              'assets/images/background.jpeg',
+              'assets/images/background2.png',
             ),
             fit: BoxFit.cover,
           ),

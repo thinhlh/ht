@@ -7,6 +7,7 @@ import 'package:tfc/app/home2/presentation/views/home2_provider.dart';
 import 'package:tfc/base/presentation/pages/p_stateless.dart';
 import 'package:tfc/config/colors.dart';
 import 'package:tfc/config/styles.dart';
+import 'package:tfc/utils/extensions/context_extension.dart';
 
 class Home2Page extends PageStateless<Home2Provider> {
   const Home2Page({super.key});
@@ -14,24 +15,28 @@ class Home2Page extends PageStateless<Home2Provider> {
   @override
   Widget buildPage(BuildContext context, Home2Provider provider) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        enableFeedback: false,
-        currentIndex: context.select<Home2Provider, int>(
-          (value) => value.selectedPage,
+      bottomNavigationBar: Theme(
+        data: context.theme.copyWith(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
         ),
-        onTap: (value) => provider.selectedPage = value,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: 'Home',
+        child: BottomNavigationBar(
+          currentIndex: context.select<Home2Provider, int>(
+            (value) => value.selectedPage,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined),
-            label: 'Setting',
-          ),
-        ],
+          onTap: (value) => provider.selectedPage = value,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_outlined),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              backgroundColor: Colors.transparent,
+              icon: Icon(Icons.settings_outlined),
+              label: 'Setting',
+            ),
+          ],
+        ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
