@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:dio/adapter.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:tfc/config/app_config.dart';
-import 'package:tfc/generated/locale_keys.g.dart';
-import 'package:tfc/services/rest_api/api/api_error_type.dart';
-import 'package:tfc/services/rest_api/interceptors/dio_logger_interceptor.dart';
-import 'package:tfc/services/rest_api/interceptors/jwt_interceptor.dart';
-import 'package:tfc/services/rest_api/models/base_response.dart';
+import 'package:ht/config/app_config.dart';
+import 'package:ht/generated/locale_keys.g.dart';
+import 'package:ht/services/rest_api/api/api_error_type.dart';
+import 'package:ht/services/rest_api/interceptors/dio_logger_interceptor.dart';
+import 'package:ht/services/rest_api/interceptors/jwt_interceptor.dart';
+import 'package:ht/services/rest_api/models/base_response.dart';
 
 mixin Api {
   Dio get _dio => _initDio();

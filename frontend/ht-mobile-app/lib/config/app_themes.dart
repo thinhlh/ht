@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tfc/config/app_sizes.dart';
-import 'package:tfc/config/colors.dart';
+import 'package:ht/config/app_sizes.dart';
+import 'package:ht/config/colors.dart';
 
 class AppTheme {
   AppTheme._internal();

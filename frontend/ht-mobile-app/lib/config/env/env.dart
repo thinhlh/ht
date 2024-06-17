@@ -1,4 +1,4 @@
-import 'package:tfc/config/env/env_type.dart';
+import 'package:ht/config/env/env_type.dart';
 
 class Env {
   final EnvType envType;

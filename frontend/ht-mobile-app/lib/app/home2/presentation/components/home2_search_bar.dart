@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tfc/config/app_sizes.dart';
-import 'package:tfc/config/colors.dart';
+import 'package:ht/config/app_sizes.dart';
+import 'package:ht/config/colors.dart';
 
 class Home2SearchBar extends StatelessWidget {
   const Home2SearchBar({super.key});

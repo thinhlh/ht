@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:tfc/services/rest_api/api/api_error_type.dart';
-import 'package:tfc/services/rest_api/models/base_response.dart';
+import 'package:ht/services/rest_api/api/api_error_type.dart';
+import 'package:ht/services/rest_api/models/base_response.dart';
 
 mixin ApiError {
   /// Call api safety with error handling.

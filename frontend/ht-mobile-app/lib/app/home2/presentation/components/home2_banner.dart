@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:tfc/config/colors.dart';
-import 'package:tfc/config/styles.dart';
+import 'package:ht/config/colors.dart';
+import 'package:ht/config/styles.dart';
 
 class Home2Banner extends StatelessWidget {
   const Home2Banner({super.key});

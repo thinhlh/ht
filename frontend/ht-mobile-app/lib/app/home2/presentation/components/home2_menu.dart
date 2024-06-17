@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tfc/app/home2/domain/entity/menu.dart' as m;
-import 'package:tfc/config/app_sizes.dart';
-import 'package:tfc/config/colors.dart';
-import 'package:tfc/config/styles.dart';
+import 'package:ht/app/home2/domain/entity/menu.dart' as m;
+import 'package:ht/config/app_sizes.dart';
+import 'package:ht/config/colors.dart';
+import 'package:ht/config/styles.dart';
 
 class Home2Menu extends StatelessWidget {
   Home2Menu({super.key});

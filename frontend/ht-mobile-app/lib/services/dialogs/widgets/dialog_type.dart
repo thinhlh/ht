@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tfc/config/colors.dart';
+import 'package:ht/config/colors.dart';
 
 enum DialogType {
   success,

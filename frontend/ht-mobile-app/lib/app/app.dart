@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:tfc/config/app_languages.dart';
-import 'package:tfc/config/app_routers.dart';
-import 'package:tfc/config/app_sizes.dart';
-import 'package:tfc/config/global_providers.dart';
-import 'package:tfc/config/app_themes.dart';
+import 'package:ht/config/app_languages.dart';
+import 'package:ht/config/app_routers.dart';
+import 'package:ht/config/app_sizes.dart';
+import 'package:ht/config/global_providers.dart';
+import 'package:ht/config/app_themes.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);

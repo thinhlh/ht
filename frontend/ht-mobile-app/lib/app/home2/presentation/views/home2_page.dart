@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tfc/app/home2/presentation/components/home2_banner.dart';
-import 'package:tfc/app/home2/presentation/components/home2_menu.dart';
-import 'package:tfc/app/home2/presentation/components/home2_search_bar.dart';
-import 'package:tfc/app/home2/presentation/views/home2_provider.dart';
-import 'package:tfc/base/presentation/pages/p_stateless.dart';
-import 'package:tfc/config/colors.dart';
-import 'package:tfc/config/styles.dart';
-import 'package:tfc/utils/extensions/context_extension.dart';
+import 'package:ht/app/home2/presentation/components/home2_banner.dart';
+import 'package:ht/app/home2/presentation/components/home2_menu.dart';
+import 'package:ht/app/home2/presentation/components/home2_search_bar.dart';
+import 'package:ht/app/home2/presentation/views/home2_provider.dart';
+import 'package:ht/base/presentation/pages/p_stateless.dart';
+import 'package:ht/config/colors.dart';
+import 'package:ht/config/styles.dart';
+import 'package:ht/utils/extensions/context_extension.dart';
 
 class Home2Page extends PageStateless<Home2Provider> {
   const Home2Page({super.key});

@@ -1,6 +1,6 @@
 import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
-import 'package:tfc/config/colors.dart';
+import 'package:ht/config/colors.dart';
 
 class UiUtils {
   static Future<void> showInfoSnackBar(

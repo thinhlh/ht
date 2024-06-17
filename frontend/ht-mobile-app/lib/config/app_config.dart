@@ -1,4 +1,4 @@
-import 'package:tfc/config/env/env.dart';
+import 'package:ht/config/env/env.dart';
 
 class AppConfig {
   AppConfig._internal();

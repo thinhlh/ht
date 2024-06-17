@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tfc/app/common/presentation/widgets/dialog/w_error_dialog.dart';
+import 'package:ht/app/common/presentation/widgets/dialog/w_error_dialog.dart';
 
 class AppDialog {
   BuildContext? _context;

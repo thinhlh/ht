@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:tfc/config/colors.dart';
-import 'package:tfc/generated/locale_keys.g.dart';
+import 'package:ht/config/colors.dart';
+import 'package:ht/generated/locale_keys.g.dart';
 
 enum DialogType {
   success,

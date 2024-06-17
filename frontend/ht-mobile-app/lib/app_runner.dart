@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:tfc/config/app_languages.dart';
-import 'package:tfc/config/values.dart';
-import 'package:tfc/services/local/shared_preferences/app_preference.dart';
+import 'package:ht/config/app_languages.dart';
+import 'package:ht/config/values.dart';
+import 'package:ht/services/local/shared_preferences/app_preference.dart';
 
 import 'app/app.dart';
 

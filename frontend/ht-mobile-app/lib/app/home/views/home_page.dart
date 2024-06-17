@@ -2,15 +2,15 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:tfc/app/common/presentation/widgets/dialog/dialog_type.dart';
-import 'package:tfc/app/common/presentation/widgets/dialog/w_error_dialog.dart';
-import 'package:tfc/app/home/views/home_provider.dart';
-import 'package:tfc/base/presentation/pages/p_stateless.dart';
-import 'package:tfc/config/app_languages.dart';
-import 'package:tfc/config/app_routers.dart';
-import 'package:tfc/config/app_sizes.dart';
-import 'package:tfc/generated/locale_keys.g.dart';
-import 'package:tfc/utils/extensions/context_extension.dart';
+import 'package:ht/app/common/presentation/widgets/dialog/dialog_type.dart';
+import 'package:ht/app/common/presentation/widgets/dialog/w_error_dialog.dart';
+import 'package:ht/app/home/views/home_provider.dart';
+import 'package:ht/base/presentation/pages/p_stateless.dart';
+import 'package:ht/config/app_languages.dart';
+import 'package:ht/config/app_routers.dart';
+import 'package:ht/config/app_sizes.dart';
+import 'package:ht/generated/locale_keys.g.dart';
+import 'package:ht/utils/extensions/context_extension.dart';
 
 class HomePage extends PageStateless<HomeProvider> {
   const HomePage({super.key});

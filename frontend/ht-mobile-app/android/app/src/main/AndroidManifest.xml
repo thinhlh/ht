@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thinhlh.tfc">
+    package="com.thinhlh.ht">
    <application
-        android:label="tfc"
+        android:label="ht"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

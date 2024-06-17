@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tfc/services/local/shared_preferences/app_preference_keys.dart';
-import 'package:tfc/utils/logger_utils.dart';
+import 'package:ht/services/local/shared_preferences/app_preference_keys.dart';
+import 'package:ht/utils/logger_utils.dart';
 
 class AppPreferences {
   late final SharedPreferences _store;

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tfc/app/common/presentation/widgets/dialog/dialog_type.dart';
-import 'package:tfc/config/colors.dart';
-import 'package:tfc/config/app_sizes.dart';
-import 'package:tfc/config/styles.dart';
-import 'package:tfc/utils/extensions/context_extension.dart';
+import 'package:ht/app/common/presentation/widgets/dialog/dialog_type.dart';
+import 'package:ht/config/colors.dart';
+import 'package:ht/config/app_sizes.dart';
+import 'package:ht/config/styles.dart';
+import 'package:ht/utils/extensions/context_extension.dart';
 
 class WErrorDialog extends Dialog {
   final DialogType dialogType;
