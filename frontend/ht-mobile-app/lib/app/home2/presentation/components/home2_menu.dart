@@ -22,7 +22,9 @@ class Home2Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      padding: EdgeInsets.zero,
+      padding: EdgeInsets.symmetric(
+        horizontal: AppSizes.mediumWidthDimens,
+      ),
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 4,

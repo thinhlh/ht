@@ -18,6 +18,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   responsive_framework: ^0.2.0
   another_flushbar: ^1.10.29
+  crystal_navigation_bar: ^1.0.0
 
   # Localization
   easy_localization: ^3.0.0
